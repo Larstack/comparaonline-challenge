@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha spec/*.js",
-    "after-30-days": ""
+    "after-30-days": "node src/reportGenerator.js"
   },
   "repository": {
     "type": "git",
