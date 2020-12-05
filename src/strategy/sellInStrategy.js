@@ -3,3 +3,8 @@ const decreaseLinearly = (product) => {
 };
 
 const doNotDecrease = (product) => {};
+
+module.exports = {
+  decreaseLinearly,
+  doNotDecrease,
+};

@@ -6,32 +6,33 @@ const decrease = (product, multiplier) => {
   product.price = nextPrice > MIN_PRICE ? nextPrice : MIN_PRICE;
 };
 
-//base
+const increase = (product, multiplier) => {
+  const nextPrice = product.price + 1 * multiplier;
+  product.price = nextPrice < MAX_PRICE ? nextPrice : MAX_PRICE;
+};
+
+//Used by normal product
 const decreaseNormally = (product) => {
   const multiplier = product.sellIn < 0 ? 2 : 1;
   decrease(product, multiplier);
 };
 
-//super sale
+//Used by super sale product
 const decreaseLikeSuperSaleProduct = (product) => {
   const multiplier = product.sellIn < 0 ? 4 : 2;
   decrease(product, multiplier);
 };
 
-//mega coverage
+//Used by mega coverage product
 const behaveLikeLegendaryProduct = (product) => {};
 
-const increase = (product, multiplier) => {
-  const nextPrice = product.price + 1 * multiplier;
-  product.price = nextPrice < MAX_PRICE ? nextPrice : MAX_PRICE;
-};
-//full coverage
+//Used by full coverage product
 const increaseNormally = (product) => {
   const multiplier = product.sellIn < 0 ? 2 : 1;
   increase(product, multiplier);
 };
 
-// special FullCoverage
+//Used by special full coverage product
 const decreaseAccordingToTime = (product) => {
   if (product.sellIn < 1) {
     product.price = 0;
