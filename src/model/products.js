@@ -1,47 +1,54 @@
-const coTest = require('../coTest');
-const Product = coTest.ProductWithBehavior;
+const { Product } = require('../coTest');
 const { doNotDecrease } = require('../strategy/sellInStrategy');
-
 const {
-  decreaseNormally,
   increaseNormally,
   decreaseAccordingToTime,
   behaveLikeLegendaryProduct,
   decreaseLikeSuperSaleProduct,
 } = require('../strategy/priceStrategy');
 
-class Normal extends Product {
-  constructor(name, sellIn, price) {
-    super(name, sellIn, price, decreaseNormally);
-  }
-}
-
 class FullCoverage extends Product {
   constructor(name, sellIn, price) {
-    super(name, sellIn, price, increaseNormally);
+    super(name, sellIn, price);
+  }
+  updatePrice() {
+    increaseNormally(this);
   }
 }
 
 class SpecialFullCoverage extends Product {
   constructor(name, sellIn, price) {
-    super(name, sellIn, price, decreaseAccordingToTime);
+    super(name, sellIn, price);
+  }
+
+  updatePrice() {
+    decreaseAccordingToTime(this);
   }
 }
 
 class MegaCoverage extends Product {
   constructor(name, sellIn, price) {
-    super(name, sellIn, price, behaveLikeLegendaryProduct, doNotDecrease);
+    super(name, sellIn, price);
+  }
+  updatePrice() {
+    behaveLikeLegendaryProduct(this);
+  }
+  updateSellIn() {
+    doNotDecrease(this);
   }
 }
 
 class SuperSale extends Product {
   constructor(name, sellIn, price) {
-    super(name, sellIn, price, decreaseLikeSuperSaleProduct);
+    super(name, sellIn, price);
+  }
+
+  updatePrice() {
+    decreaseLikeSuperSaleProduct(this);
   }
 }
 
 module.exports = {
-  Normal,
   FullCoverage,
   SpecialFullCoverage,
   MegaCoverage,

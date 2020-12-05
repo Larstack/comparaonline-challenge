@@ -1,5 +1,5 @@
-const sellInStrategy = require('./strategy/sellInStrategy');
-const decreaseLinearly = sellInStrategy.decreaseLinearly;
+const { decreaseNormally } = require('./strategy/priceStrategy');
+const { decreaseLinearly } = require('./strategy/sellInStrategy');
 
 class Product {
   constructor(name, sellIn, price) {
@@ -7,27 +7,13 @@ class Product {
     this.sellIn = sellIn;
     this.price = price;
   }
-}
-
-class ProductWithBehavior extends Product {
-  constructor(
-    name,
-    sellIn,
-    price,
-    updatePrice,
-    updateSellIn = decreaseLinearly
-  ) {
-    super(name, sellIn, price);
-    this.updatePrice = updatePrice;
-    this.updateSellIn = updateSellIn;
-  }
 
   updatePrice() {
-    this.updatePrice(this);
+    decreaseNormally(this);
   }
 
   updateSellIn() {
-    this.updateSellIn(this);
+    decreaseLinearly(this);
   }
 }
 
@@ -46,6 +32,5 @@ class CarInsurance {
 
 module.exports = {
   Product,
-  ProductWithBehavior,
   CarInsurance,
 };
