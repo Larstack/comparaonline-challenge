@@ -6,13 +6,27 @@ class Product {
   }
 }
 
+class ProductWithBehavior extends Product {
+  constructor(name, sellIn, price, updatePriceStrategy) {
+    super(name, sellIn, price);
+    this.updatePriceStrategy = updatePriceStrategy;
+  }
+
+  updatePrice() {
+    this.updatePriceStrategy(this);
+  }
+}
+
 class CarInsurance {
   constructor(products = []) {
     this.products = products;
   }
   updatePrice() {
     for (var i = 0; i < this.products.length; i++) {
-      if (this.products[i].name != 'Full Coverage' && this.products[i].name != 'Special Full Coverage') {
+      if (
+        this.products[i].name != 'Full Coverage' &&
+        this.products[i].name != 'Special Full Coverage'
+      ) {
         if (this.products[i].price > 0) {
           if (this.products[i].name != 'Mega Coverage') {
             this.products[i].price = this.products[i].price - 1;
@@ -47,7 +61,8 @@ class CarInsurance {
               }
             }
           } else {
-            this.products[i].price = this.products[i].price - this.products[i].price;
+            this.products[i].price =
+              this.products[i].price - this.products[i].price;
           }
         } else {
           if (this.products[i].price < 50) {
@@ -63,5 +78,6 @@ class CarInsurance {
 
 module.exports = {
   Product,
-  CarInsurance
-}
+  ProductWithBehavior,
+  CarInsurance,
+};
