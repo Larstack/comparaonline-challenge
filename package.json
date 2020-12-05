@@ -1,14 +1,15 @@
 {
-  "name": "test-software-engineer",
+  "name": "comparaonline-challenge",
   "version": "1.0.0",
   "description": "ComparaOnline Software Engineer Test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js"
+    "test": "mocha spec/*.js",
+    "after-30-days": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comparaonline/test-software-engineer.git"
+    "url": "git+https://github.com/Larstack/comparaonline-challenge.git"
   },
   "keywords": [
     "comparaonline",
@@ -16,12 +17,12 @@
     "software",
     "engineer"
   ],
-  "author": "ComparaOnline",
+  "author": "Leonardo Ricciotti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/comparaonline/test-software-engineer/issues"
+    "url": "https://github.com/Larstack/comparaonline-challenge/issues"
   },
-  "homepage": "https://github.com/comparaonline/test-software-engineer#readme",
+  "homepage": "https://github.com/Larstack/comparaonline-challenge#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1"
