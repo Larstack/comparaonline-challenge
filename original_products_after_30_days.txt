@@ -1,7 +1,4 @@
-
-> comparaonline-challenge@1.0.0 after-30-days /Users/leonardo.ricciotti/TO_2020/challenges/comparaonline/comparaonline-challenge
-> node src/reportGenerator.js
-
+OMGHAI!
 -------- day 0 --------
 name, sellIn, price
 Medium Coverage, 10, 20
@@ -24,7 +21,7 @@ Mega Coverage, -1, 80
 Special Full Coverage, 14, 21
 Special Full Coverage, 9, 50
 Special Full Coverage, 4, 50
-Super Sale, 2, 4
+Super Sale, 2, 5
 
 -------- day 2 --------
 name, sellIn, price
@@ -36,7 +33,7 @@ Mega Coverage, -1, 80
 Special Full Coverage, 13, 22
 Special Full Coverage, 8, 50
 Special Full Coverage, 3, 50
-Super Sale, 1, 2
+Super Sale, 1, 4
 
 -------- day 3 --------
 name, sellIn, price
@@ -48,7 +45,7 @@ Mega Coverage, -1, 80
 Special Full Coverage, 12, 23
 Special Full Coverage, 7, 50
 Special Full Coverage, 2, 50
-Super Sale, 0, 0
+Super Sale, 0, 3
 
 -------- day 4 --------
 name, sellIn, price
@@ -60,7 +57,7 @@ Mega Coverage, -1, 80
 Special Full Coverage, 11, 24
 Special Full Coverage, 6, 50
 Special Full Coverage, 1, 50
-Super Sale, -1, 0
+Super Sale, -1, 1
 
 -------- day 5 --------
 name, sellIn, price
@@ -69,9 +66,9 @@ Full Coverage, -3, 8
 Low Coverage, 0, 2
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 10, 26
+Special Full Coverage, 10, 25
 Special Full Coverage, 5, 50
-Special Full Coverage, 0, 0
+Special Full Coverage, 0, 50
 Super Sale, -2, 0
 
 -------- day 6 --------
@@ -81,7 +78,7 @@ Full Coverage, -4, 10
 Low Coverage, -1, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 9, 28
+Special Full Coverage, 9, 27
 Special Full Coverage, 4, 50
 Special Full Coverage, -1, 0
 Super Sale, -3, 0
@@ -93,7 +90,7 @@ Full Coverage, -5, 12
 Low Coverage, -2, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 8, 30
+Special Full Coverage, 8, 29
 Special Full Coverage, 3, 50
 Special Full Coverage, -2, 0
 Super Sale, -4, 0
@@ -105,7 +102,7 @@ Full Coverage, -6, 14
 Low Coverage, -3, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 7, 32
+Special Full Coverage, 7, 31
 Special Full Coverage, 2, 50
 Special Full Coverage, -3, 0
 Super Sale, -5, 0
@@ -117,7 +114,7 @@ Full Coverage, -7, 16
 Low Coverage, -4, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 6, 34
+Special Full Coverage, 6, 33
 Special Full Coverage, 1, 50
 Special Full Coverage, -4, 0
 Super Sale, -6, 0
@@ -129,8 +126,8 @@ Full Coverage, -8, 18
 Low Coverage, -5, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 5, 37
-Special Full Coverage, 0, 0
+Special Full Coverage, 5, 35
+Special Full Coverage, 0, 50
 Special Full Coverage, -5, 0
 Super Sale, -7, 0
 
@@ -141,7 +138,7 @@ Full Coverage, -9, 20
 Low Coverage, -6, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 4, 40
+Special Full Coverage, 4, 38
 Special Full Coverage, -1, 0
 Special Full Coverage, -6, 0
 Super Sale, -8, 0
@@ -153,7 +150,7 @@ Full Coverage, -10, 22
 Low Coverage, -7, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 3, 43
+Special Full Coverage, 3, 41
 Special Full Coverage, -2, 0
 Special Full Coverage, -7, 0
 Super Sale, -9, 0
@@ -165,7 +162,7 @@ Full Coverage, -11, 24
 Low Coverage, -8, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 2, 46
+Special Full Coverage, 2, 44
 Special Full Coverage, -3, 0
 Special Full Coverage, -8, 0
 Super Sale, -10, 0
@@ -177,7 +174,7 @@ Full Coverage, -12, 26
 Low Coverage, -9, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 1, 49
+Special Full Coverage, 1, 47
 Special Full Coverage, -4, 0
 Special Full Coverage, -9, 0
 Super Sale, -11, 0
@@ -189,7 +186,7 @@ Full Coverage, -13, 28
 Low Coverage, -10, 0
 Mega Coverage, 0, 80
 Mega Coverage, -1, 80
-Special Full Coverage, 0, 0
+Special Full Coverage, 0, 50
 Special Full Coverage, -5, 0
 Special Full Coverage, -10, 0
 Super Sale, -12, 0
